@@ -1,1 +1,13 @@
-<p>weather-home works!</p>
+<div class="search">
+  <form #form="ngForm" (submit)="onSubmit()">
+    <input
+      type="text"
+      placeholder="Procure sua cidade 🏙️"
+      name="city"
+      [(ngModel)]="initialCityName"
+    />
+    <button class="search-icon">
+      <fa-icon size="lg" style="cursor: pointer" [icon]="searchIcon"></fa-icon>
+    </button>
+  </form>
+</div>

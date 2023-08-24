@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --blue-300: #B0E0E6;
-  --blue-400: #ADD8E6;
-  --blue-500: #87CEEB;
-  --blue-600: #4169E1;
+  --blue-300: #b0e0e6;
+  --blue-400: #add8e6;
+  --blue-500: #87ceeb;
+  --blue-600: #4169e1;
   --blue-700: #000080;
-    --white: #fff;
+  --white: #fff;
   --grey-1: #ededed;
   --shadow-dark: rgba(0, 0, 0, 0.3);
   --shadow-light: rgba(255, 255, 255, 0.277);
@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   width: 100%;
   height: 100%;
@@ -166,8 +166,18 @@ fa-icon {
   font-size: 0.8rem;
   text-align: center;
   width: 70%;
-}
-.search-icon {
-  margin-left: 1rem;
+  font-family: inherit;
 }
 
+.search-icon {
+  background-color: transparent;
+  border: none;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-icon:hover {
+  opacity: 0.7;
+}
